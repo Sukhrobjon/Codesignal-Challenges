@@ -1,12 +1,17 @@
 # number one solution 
-def isIPv4AddressBest(s):
-    p = s.split('.')
-    print(p)
-    return len(p) == 4 and all(n.isdigit() and 0 <= int(n) < 256 for n in p)
+def is_ipv4_address(s):
+    """
+        Return True if 's' is a valid IPv4 address
+    """
+    # split the string on dots
+    s_split = s.split('.')
+    
+    return len(s_split) == 4 and all(num.isdigit() and 0 <= int(num) < 256 for num in s_split)
 
 
 # my Solution
 def isIPv4Address(inputString):
+# I should have thought about using .split() function
     inputString = inputString + '.'
     print(inputString)
     start = 0
@@ -25,4 +30,4 @@ def isIPv4Address(inputString):
 
 s = "172.16.254.1"
 
-print(isIPv4AddressBest(s))
+print(is_ipv4_address(s))
