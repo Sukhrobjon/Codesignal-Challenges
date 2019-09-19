@@ -4,3 +4,4 @@ def sum_of_powers(n, divisor):
     should return the sum of those powers.
     Resource: https://app.codesignal.com/challenge/LTQSYDDMMQxkoY5bK
     """
+    

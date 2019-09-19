@@ -1,8 +1,8 @@
-def addBorder(a):
+def add_border(a):
     b = []
     newLen = len(a[0]) + 2
     border = ""
-    for i in range(newLen):
+    for _ in range(newLen):
         border += "*"
     b.append(border)
     for item in range(0, len(a)):
@@ -14,4 +14,4 @@ def addBorder(a):
 
 p = ["aaa", "bbb", "ccc"]
 
-print(addBorder(p))
+print(add_border(p))
