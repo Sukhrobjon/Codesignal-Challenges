@@ -10,9 +10,12 @@ def alphabetic_shift(input_string):
     output_list = list(input_string)
     print(output_list)
     for i in range(len(output_list)):
+        # special case
         if output_list[i] == 'z':
             output_list[i] = 'a'
         else:
+            # get the ascii value add 1 to get the next char and convert it
+            # back to char
             output_list[i] = chr(ord(output_list[i]) + 1)
     return "".join(output_list)
 
